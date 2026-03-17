@@ -1,0 +1,2783 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pelúcias Personalizadas B2B — Fábrica com Pedido Mínimo de 300 Unidades | Design Gratuito</title>
+  <meta name="description"
+    content="Mascotes e pelúcias personalizadas para empresas. Fábrica própria, pedido mínimo de 300 unidades, design gratuito e entrega em 20 a 30 dias úteis. +1.000 empresas atendidas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ── CSS VARIABLES ────────────────────────────────── */
+    :root {
+      --primary: #f472b6;
+      --primary-light: #fce7f3;
+      --secondary: #818cf8;
+      --secondary-light: #ede9fe;
+      --accent: #fbbf24;
+      --accent-light: #fef9c3;
+      --dark: #1e1b4b;
+      --dark-mid: #312e81;
+      --bg: #fffafb;
+      --white: #ffffff;
+      --text: #1e1b4b;
+      --text-mid: #4a4670;
+      --text-light: #8b87b0;
+      --border: #1e1b4b;
+      --success: #22c55e;
+      --r-sm: 12px;
+      --r-md: 20px;
+      --r-lg: 32px;
+      --r-xl: 48px;
+      --shadow-hard: 4px 4px 0 0 #1e1b4b;
+      --shadow-hard-lg: 6px 6px 0 0 #1e1b4b;
+      --shadow-hard-xl: 8px 8px 0 0 #1e1b4b;
+      --font-head: 'Montserrat', sans-serif;
+      --font-body: 'Outfit', sans-serif;
+      --transition: .3s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    /* ── RESET & BASE ─────────────────────────────────── */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background-color: var(--bg);
+      background-image: radial-gradient(#f472b618 1px, transparent 1px);
+      background-size: 40px 40px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font-family: var(--font-body);
+    }
+
+    /* ── UTILITIES ────────────────────────────────────── */
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-family: var(--font-head);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--dark);
+      background: var(--accent-light);
+      padding: 4px 14px;
+      border-radius: 100px;
+      border: 2px solid var(--dark);
+      box-shadow: 2px 2px 0 0 var(--dark);
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: var(--font-head);
+      font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--text-mid);
+      max-width: 580px;
+      line-height: 1.7;
+    }
+
+    /* ── BUTTONS ──────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 12px 28px;
+      border-radius: 100px;
+      border: 2px solid var(--dark);
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--dark);
+      box-shadow: var(--shadow-hard);
+    }
+
+    .btn-primary:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-hard-xl);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--dark);
+      box-shadow: var(--shadow-hard);
+    }
+
+    .btn-secondary:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-hard-xl);
+    }
+
+    .btn-navy {
+      background: var(--dark);
+      color: var(--primary);
+      box-shadow: 4px 4px 0 0 var(--primary);
+    }
+
+    .btn-navy:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 0 var(--primary);
+    }
+
+    .btn-whatsapp {
+      background: var(--primary);
+      color: var(--dark);
+      box-shadow: var(--shadow-hard);
+    }
+
+    .btn-whatsapp:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-hard-xl);
+    }
+
+    .btn-lg {
+      padding: 16px 36px;
+      font-size: 1.05rem;
+    }
+
+    .btn svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+
+    /* ── FADE IN ANIMATIONS ───────────────────────────── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity .7s var(--transition), transform .7s var(--transition);
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-up:nth-child(2) {
+      transition-delay: .1s;
+    }
+
+    .fade-up:nth-child(3) {
+      transition-delay: .2s;
+    }
+
+    .fade-up:nth-child(4) {
+      transition-delay: .3s;
+    }
+
+    .fade-up:nth-child(5) {
+      transition-delay: .4s;
+    }
+
+    /* ── NAVBAR ───────────────────────────────────────── */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      transition: transform 0.3s ease, padding 0.3s ease;
+      padding: 16px 0;
+    }
+
+    #navbar.scrolled {
+      padding: 10px 0;
+    }
+
+    #navbar.nav-hidden {
+      transform: translateY(-120%);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      background: var(--white);
+      border: 2px solid var(--dark);
+      border-radius: 100px;
+      padding: 10px 24px;
+      box-shadow: var(--shadow-hard);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--dark);
+    }
+
+    .nav-logo svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-links a {
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--text-mid);
+      transition: color var(--transition);
+      font-family: var(--font-head);
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      margin-left: 8px;
+      margin-bottom: 4px;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2.5px;
+      background: var(--dark);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background: var(--bg);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 0 32px;
+      gap: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      font-family: var(--font-head);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .mobile-menu .btn {
+      font-size: 1rem;
+      padding: 12px 32px;
+      width: calc(100% - 48px);
+    }
+
+    .mobile-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--white);
+      border: 2px solid var(--dark);
+      border-radius: 50%;
+      font-size: 1.1rem;
+      cursor: pointer;
+      color: var(--dark);
+      box-shadow: var(--shadow-hard);
+      line-height: 1;
+    }
+
+    /* ── HERO ─────────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 160px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-bg-blob {
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 60vw;
+      max-width: 800px;
+      aspect-ratio: 1;
+      background: radial-gradient(ellipse at center, #fce7f3 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-bg-dots {
+      position: absolute;
+      bottom: 10%;
+      left: -5%;
+      width: 300px;
+      height: 300px;
+      background-image: radial-gradient(#f472b630 1.5px, transparent 1.5px);
+      background-size: 24px 24px;
+      pointer-events: none;
+      z-index: 0;
+      opacity: .8;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent-light);
+      color: var(--dark);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .85rem;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+      border: 2px solid var(--dark);
+      box-shadow: var(--shadow-hard);
+    }
+
+    .hero-badge span {
+      font-size: .9rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-head);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero-title .accent {
+      color: var(--primary);
+    }
+
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--text-mid);
+      line-height: 1.75;
+      margin-bottom: 36px;
+      max-width: 520px;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .hero-ctas .btn {
+      width: 100%;
+      max-width: 360px;
+      justify-content: center;
+    }
+
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 28px;
+      color: var(--text-mid);
+      font-size: .85rem;
+      font-family: var(--font-head);
+      font-weight: 600;
+    }
+
+    .hero-trust-avatars {
+      display: flex;
+    }
+
+    .hero-trust-avatars div {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 2px solid var(--white);
+      margin-right: -8px;
+      font-size: .75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    .hero-illustration {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-mascot-wrap {
+      animation: float 4s ease-in-out infinite;
+      position: relative;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-16px);
+      }
+    }
+
+    .hero-mascot-bg {
+      width: 420px;
+      max-width: 100%;
+      height: 420px;
+      max-height: 100vw;
+      border-radius: 50%;
+      background: var(--primary-light);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 4px solid var(--dark);
+      box-shadow: var(--shadow-hard-xl);
+    }
+
+    .hero-pill {
+      position: absolute;
+      background: var(--white);
+      border-radius: 100px;
+      border: 2px solid var(--dark);
+      box-shadow: var(--shadow-hard);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .85rem;
+      color: var(--dark);
+      white-space: nowrap;
+    }
+
+    .hero-pill.pill-1 {
+      top: 8%;
+      left: -8%;
+    }
+
+    .hero-pill.pill-2 {
+      bottom: 18%;
+      left: -14%;
+    }
+
+    .hero-pill.pill-3 {
+      top: 15%;
+      right: -12%;
+    }
+
+    .hero-pill .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── SOCIAL PROOF BAR ─────────────────────────────── */
+    #proof-bar {
+      background: var(--dark);
+      padding: 56px 0;
+      position: relative;
+      overflow: hidden;
+      border-top: 4px solid var(--dark);
+      border-bottom: 4px solid var(--dark);
+    }
+
+    #proof-bar::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(#ffffff08 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+
+    .proof-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+      background: rgba(255, 255, 255, .2);
+      border-radius: var(--r-lg);
+      border: 2px solid rgba(255, 255, 255, .2);
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+
+    .proof-stat {
+      background: var(--dark);
+      padding: 36px 28px;
+      text-align: center;
+    }
+
+    .proof-stat-number {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .proof-stat-label {
+      font-size: .9rem;
+      color: rgba(255, 255, 255, .75);
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    .proof-sub {
+      text-align: center;
+      color: rgba(255, 255, 255, .6);
+      font-size: .9rem;
+      font-family: var(--font-head);
+    }
+
+    .proof-sub strong {
+      color: var(--accent);
+    }
+
+    /* ── HOW IT WORKS ─────────────────────────────────── */
+    #como-funciona {
+      padding: 100px 0;
+      background: var(--bg);
+    }
+
+    .how-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .how-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      position: relative;
+      margin-bottom: 36px;
+    }
+
+    .steps-grid::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: 10%;
+      right: 10%;
+      height: 3px;
+      background: linear-gradient(to right, var(--primary-light), var(--primary), var(--primary-light));
+      z-index: 0;
+    }
+
+    .step-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-num {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 3px solid var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--dark);
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-hard);
+      transition: var(--transition);
+    }
+
+    .step-item:hover .step-num {
+      background: var(--primary);
+      color: var(--white);
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 0 var(--dark);
+    }
+
+    .step-icon {
+      font-size: 1.6rem;
+      margin-bottom: 8px;
+    }
+
+    .step-title {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .95rem;
+      color: var(--dark);
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+
+    .step-desc {
+      font-size: .9125rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+    }
+
+    .how-cta {
+      text-align: center;
+    }
+
+    /* ── PRODUCTS ─────────────────────────────────────── */
+    #produtos {
+      padding: 100px 0;
+      background: var(--white);
+      position: relative;
+      overflow: hidden;
+      border-top: 4px solid var(--dark);
+    }
+
+    #produtos::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      right: -120px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: var(--secondary-light);
+      opacity: .5;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .products-header,
+    .products-grid {
+      position: relative;
+      z-index: 1;
+    }
+
+    .products-header {
+      margin-bottom: 56px;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+      gap: 24px;
+    }
+
+    .product-card {
+      background: var(--white);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      border: 2px solid var(--dark);
+      box-shadow: var(--shadow-hard);
+      transition: var(--transition);
+      cursor: default;
+    }
+
+    .product-card:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: var(--shadow-hard-xl);
+    }
+
+    .product-card:nth-child(4) {
+      grid-column: 1 / 3;
+    }
+
+    .product-img {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      position: relative;
+      overflow: hidden;
+      border-bottom: 2px solid var(--dark);
+    }
+
+    .product-img svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+    }
+
+    .product-body {
+      padding: 24px;
+    }
+
+    .product-name {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--dark);
+      margin-bottom: 8px;
+    }
+
+    .product-desc {
+      font-size: .9rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+
+    .product-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .product-tag {
+      font-size: .75rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 100px;
+      background: var(--secondary-light);
+      color: var(--dark);
+      border: 1.5px solid var(--dark);
+      font-family: var(--font-head);
+    }
+
+    /* ── DIFFERENTIALS ────────────────────────────────── */
+    #diferenciais {
+      padding: 100px 0;
+      background: var(--bg);
+    }
+
+    .diff-header {
+      margin-bottom: 56px;
+    }
+
+    .comparison-table-wrap {
+      overflow-x: auto;
+      border-radius: var(--r-md);
+      border: 2px solid var(--dark);
+      box-shadow: var(--shadow-hard-lg);
+      margin-bottom: 56px;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      font-size: .9rem;
+      min-width: 600px;
+    }
+
+    .comparison-table thead tr {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .comparison-table th {
+      padding: 20px 24px;
+      text-align: left;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .9rem;
+      letter-spacing: .04em;
+    }
+
+    .comparison-table th.us-col {
+      background: var(--primary);
+      color: var(--dark);
+    }
+
+    .comparison-table tbody tr {
+      border-bottom: 2px solid var(--dark);
+      transition: background var(--transition);
+    }
+
+    .comparison-table tbody tr:last-child {
+      border-bottom: none;
+    }
+
+    .comparison-table tbody tr:hover {
+      background: var(--primary-light);
+    }
+
+    .comparison-table td {
+      padding: 16px 24px;
+      color: var(--text-mid);
+    }
+
+    .comparison-table td:first-child {
+      font-weight: 600;
+      color: var(--dark);
+      font-family: var(--font-head);
+    }
+
+    .comparison-table td.us-val {
+      color: var(--dark);
+      font-weight: 700;
+      font-family: var(--font-head);
+      background: #fce7f340;
+    }
+
+    .badge-yes {
+      color: #16a34a;
+    }
+
+    .badge-no {
+      color: #dc2626;
+    }
+
+    .badge-maybe {
+      color: #d97706;
+    }
+
+    .diff-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .diff-card {
+      background: var(--white);
+      border-radius: var(--r-md);
+      padding: 32px;
+      border: 2px solid var(--dark);
+      box-shadow: var(--shadow-hard);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .diff-card:nth-child(1) {
+      background: var(--primary-light);
+    }
+
+    .diff-card:nth-child(2) {
+      background: var(--secondary-light);
+    }
+
+    .diff-card:nth-child(3) {
+      background: var(--accent-light);
+    }
+
+    .diff-card:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: var(--shadow-hard-xl);
+    }
+
+    .diff-card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .diff-card-title {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--dark);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .diff-card-text {
+      font-size: .9rem;
+      color: var(--text-mid);
+      line-height: 1.7;
+    }
+
+    /* ── FOR WHOM ─────────────────────────────────────── */
+    #para-quem {
+      padding: 100px 0;
+      background: var(--dark);
+      position: relative;
+      overflow: hidden;
+      border-top: 4px solid var(--dark);
+      border-bottom: 4px solid var(--dark);
+    }
+
+    #para-quem::before {
+      content: '';
+      position: absolute;
+      bottom: -100px;
+      left: -100px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: rgba(244, 114, 182, .06);
+      pointer-events: none;
+    }
+
+    .forwhom-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .forwhom-header .section-tag {
+      background: rgba(251, 191, 36, .2);
+      color: var(--accent);
+      border-color: rgba(251, 191, 36, .5);
+      box-shadow: 2px 2px 0 0 rgba(251, 191, 36, .3);
+    }
+
+    .forwhom-header .section-title {
+      color: var(--white);
+    }
+
+    .forwhom-header .section-sub {
+      color: rgba(255, 255, 255, .65);
+      margin: 0 auto;
+    }
+
+    .segment-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .seg-tab {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .9rem;
+      padding: 10px 20px;
+      border-radius: 100px;
+      border: 2px solid rgba(255, 255, 255, .3);
+      background: transparent;
+      color: rgba(255, 255, 255, .7);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .seg-tab:hover {
+      border-color: var(--primary);
+      color: var(--white);
+    }
+
+    .seg-tab.active {
+      background: var(--primary);
+      border-color: var(--white);
+      color: var(--white);
+      box-shadow: var(--shadow-hard);
+    }
+
+    .segment-panels {
+      position: relative;
+    }
+
+    .seg-panel {
+      display: none;
+    }
+
+    .seg-panel.active {
+      display: block;
+    }
+
+    .seg-panel-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      background: rgba(255, 255, 255, .05);
+      border: 2px solid rgba(255, 255, 255, .15);
+      border-radius: var(--r-lg);
+      padding: 56px;
+      min-width: 0;
+    }
+
+    .seg-label {
+      display: inline-block;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .75rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .seg-title {
+      font-family: var(--font-head);
+      font-weight: 900;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      color: var(--white);
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    .seg-body {
+      color: rgba(255, 255, 255, .7);
+      line-height: 1.8;
+      margin-bottom: 28px;
+      font-size: .95rem;
+    }
+
+    .seg-quote {
+      color: rgba(255, 255, 255, .5);
+      font-style: italic;
+      font-size: .9rem;
+      border-left: 3px solid var(--primary);
+      padding-left: 16px;
+      margin-bottom: 28px;
+    }
+
+    .seg-visual {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .seg-icon-big {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(244, 114, 182, .12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 7rem;
+      border: 2px solid rgba(244, 114, 182, .25);
+      box-shadow: var(--shadow-hard);
+    }
+
+    /* ── TESTIMONIAL ──────────────────────────────────── */
+    #depoimento {
+      padding: 100px 0;
+      background: var(--primary-light);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border-top: 4px solid var(--dark);
+      border-bottom: 4px solid var(--dark);
+    }
+
+    .testimonial-marks {
+      font-family: var(--font-head);
+      font-size: 8rem;
+      font-weight: 700;
+      color: var(--primary);
+      opacity: .2;
+      line-height: .7;
+      margin-bottom: 8px;
+    }
+
+    .testimonial-text {
+      font-family: var(--font-head);
+      font-size: clamp(1.2rem, 3vw, 1.9rem);
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.5;
+      max-width: 780px;
+      margin: 0 auto 24px;
+    }
+
+    .testimonial-author {
+      font-size: .9rem;
+      color: var(--text-mid);
+      font-weight: 600;
+      margin-bottom: 40px;
+      font-family: var(--font-head);
+    }
+
+    .testimonial-stat {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--white);
+      border-radius: 100px;
+      border: 2px solid var(--dark);
+      padding: 10px 24px;
+      box-shadow: var(--shadow-hard);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .95rem;
+      color: var(--dark);
+    }
+
+    .testimonial-stat span {
+      font-size: 1.2rem;
+    }
+
+    /* ── FAQ ──────────────────────────────────────────── */
+    #faq {
+      padding: 100px 0;
+      background: var(--bg);
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .faq-sidebar .section-sub {
+      margin-bottom: 28px;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border-radius: var(--r-sm);
+      overflow: hidden;
+      border: 2px solid var(--dark);
+      box-shadow: var(--shadow-hard);
+      transition: var(--transition);
+    }
+
+    .faq-item.open {
+      background: var(--primary-light);
+      box-shadow: var(--shadow-hard-lg);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      text-align: left;
+      cursor: pointer;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .95rem;
+      color: var(--dark);
+      transition: color var(--transition);
+    }
+
+    .faq-item.open .faq-question {
+      color: var(--primary);
+    }
+
+    .faq-icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 2px solid var(--dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: var(--transition);
+      color: var(--dark);
+      background: var(--white);
+    }
+
+    .faq-item.open .faq-icon {
+      background: var(--primary);
+      border-color: var(--dark);
+      color: var(--white);
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease;
+    }
+
+    .faq-answer-inner {
+      padding: 0 24px 20px;
+      font-size: .9rem;
+      color: var(--text-mid);
+      line-height: 1.75;
+    }
+
+    /* ── LEAD FORM ────────────────────────────────────── */
+    #orcamento {
+      padding: 100px 0;
+      background: var(--bg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    #orcamento::after {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: var(--secondary-light);
+      opacity: .4;
+      pointer-events: none;
+    }
+
+    .form-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+      position: relative;
+      z-index: 1;
+    }
+
+    .form-sidebar .section-sub {
+      margin-bottom: 32px;
+    }
+
+    .form-features {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .form-feature-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--r-sm);
+      background: var(--accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      border: 2px solid var(--dark);
+      box-shadow: 2px 2px 0 0 var(--dark);
+    }
+
+    .form-feature-text strong {
+      display: block;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .95rem;
+      color: var(--dark);
+      margin-bottom: 2px;
+    }
+
+    .form-feature-text span {
+      font-size: .9125rem;
+      color: var(--text-mid);
+    }
+
+    .form-card {
+      background: var(--white);
+      border-radius: var(--r-lg);
+      padding: 48px;
+      border: 3px solid var(--dark);
+      box-shadow: var(--shadow-hard-xl);
+    }
+
+    .form-title {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--dark);
+      margin-bottom: 28px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      font-size: .85rem;
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: .02em;
+      font-family: var(--font-head);
+    }
+
+    .form-group label .req {
+      color: var(--primary);
+      margin-left: 2px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid var(--dark);
+      border-radius: var(--r-sm);
+      font-size: .9rem;
+      color: var(--dark);
+      background: var(--bg);
+      transition: var(--transition);
+      outline: none;
+      font-family: var(--font-body);
+      box-shadow: 2px 2px 0 0 var(--dark);
+    }
+
+    .form-input:focus {
+      border-color: var(--primary);
+      background: var(--white);
+      box-shadow: 3px 3px 0 0 var(--primary);
+    }
+
+    .form-input::placeholder {
+      color: var(--text-light);
+    }
+
+    textarea.form-input {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .radio-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      border: 2px solid var(--dark);
+      border-radius: 100px;
+      cursor: pointer;
+      font-size: .88rem;
+      color: var(--dark);
+      transition: var(--transition);
+      font-family: var(--font-head);
+      font-weight: 600;
+      background: var(--white);
+      box-shadow: 2px 2px 0 0 var(--dark);
+    }
+
+    .radio-label:has(input:checked) {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      color: var(--dark);
+      box-shadow: 2px 2px 0 0 var(--primary);
+    }
+
+    .radio-label input {
+      accent-color: var(--primary);
+    }
+
+    .form-submit {
+      margin-top: 24px;
+    }
+
+    .form-submit .btn {
+      width: 100%;
+      justify-content: center;
+      font-size: 1.05rem;
+      padding: 16px;
+    }
+
+    .form-microcopy {
+      text-align: center;
+      font-size: .82rem;
+      color: var(--text-light);
+      margin-top: 12px;
+      font-family: var(--font-head);
+    }
+
+    .form-wa-alt {
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 2px solid var(--dark);
+      font-size: .88rem;
+      color: var(--text-mid);
+      font-family: var(--font-head);
+      font-weight: 600;
+    }
+
+    .form-wa-alt a {
+      color: #25D366;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 48px 24px;
+    }
+
+    .form-success-icon {
+      font-size: 4rem;
+      margin-bottom: 16px;
+    }
+
+    .form-success h3 {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+
+    .form-success p {
+      color: var(--text-mid);
+    }
+
+    /* ── FOOTER ───────────────────────────────────────── */
+    footer {
+      background: var(--dark);
+      color: rgba(255, 255, 255, .6);
+      padding: 56px 0 32px;
+      border-top: 4px solid var(--dark);
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand .nav-logo {
+      margin-bottom: 16px;
+      color: var(--white);
+    }
+
+    .footer-tagline {
+      font-size: .9rem;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, .5);
+      margin-bottom: 20px;
+    }
+
+    .footer-col-title {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: .85rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      font-size: .9rem;
+      color: rgba(255, 255, 255, .6);
+      transition: color var(--transition);
+      font-family: var(--font-head);
+      font-weight: 600;
+    }
+
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      padding-top: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: .85rem;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-family: var(--font-head);
+      font-weight: 600;
+    }
+
+    .footer-bottom a {
+      color: var(--primary);
+    }
+
+    /* ── FLOATING WHATSAPP ────────────────────────────── */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 200;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--dark);
+      box-shadow: var(--shadow-hard);
+      transition: var(--transition);
+      animation: pulse-wa 3s ease infinite;
+    }
+
+    .wa-float:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-hard-lg);
+    }
+
+    .wa-float svg {
+      width: 30px;
+      height: 30px;
+    }
+
+    @keyframes pulse-wa {
+
+      0%,
+      100% {
+        box-shadow: var(--shadow-hard);
+      }
+
+      50% {
+        box-shadow: 4px 4px 0 0 var(--dark), 0 0 0 8px rgba(37, 211, 102, .15);
+      }
+    }
+
+    /* ── RESPONSIVE ───────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .hero-illustration {
+        order: -1;
+      }
+
+      .hero-mascot-bg {
+        width: 300px;
+        height: 300px;
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .steps-grid::before {
+        display: none;
+      }
+
+      .steps-grid .step-item:last-child {
+        grid-column: 1 / -1;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .products-grid .product-card:nth-child(4) {
+        grid-column: auto;
+      }
+
+      .diff-cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .diff-cards .diff-card:last-child {
+        grid-column: 1 / -1;
+      }
+
+      .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .form-feature {
+        align-items: center;
+      }
+
+      .form-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .hero-inner {
+        gap: 32px;
+        text-align: center;
+      }
+
+      .hero-ctas {
+        justify-content: center;
+      }
+
+      .hero-trust {
+        justify-content: center;
+      }
+
+      .hero-pill {
+        display: none;
+      }
+
+      .proof-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .steps-grid .step-item:last-child {
+        grid-column: auto;
+      }
+
+      .step-item {
+        display: grid;
+        grid-template-columns: 56px 1fr;
+        grid-template-rows: auto auto auto;
+        column-gap: 16px;
+        text-align: left;
+        align-items: start;
+        padding: 0 0 28px 0;
+        position: relative;
+      }
+
+      .step-num {
+        grid-row: 1 / 4;
+        grid-column: 1;
+        justify-self: center;
+        align-self: center;
+        width: 48px;
+        height: 48px;
+        font-size: 1.1rem;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 1;
+      }
+
+      .step-icon {
+        grid-row: 1;
+        grid-column: 2;
+        font-size: 1.3rem;
+        margin-bottom: 4px;
+        text-align: left;
+      }
+
+      .step-title {
+        grid-row: 2;
+        grid-column: 2;
+      }
+
+      .step-desc {
+        grid-row: 3;
+        grid-column: 2;
+      }
+
+      .step-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 27px;
+        top: 48px;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(to bottom, var(--primary-light), transparent);
+        z-index: 0;
+      }
+
+      #como-funciona {
+        padding: 64px 0;
+      }
+
+      .how-header {
+        margin-bottom: 40px;
+        text-align: left;
+      }
+
+      .how-header .section-sub {
+        margin: 0;
+      }
+
+      .forwhom-header {
+        text-align: left;
+      }
+
+      .forwhom-header .section-sub {
+        margin: 0;
+      }
+
+      .how-cta {
+        text-align: left;
+      }
+
+      .section-tag {
+        display: inline-block;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .diff-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .diff-cards .diff-card:last-child {
+        grid-column: auto;
+      }
+
+      .seg-panel-inner {
+        grid-template-columns: 1fr;
+        padding: 32px 24px;
+        gap: 28px;
+      }
+
+      .seg-panel-inner>* {
+        min-width: 0;
+        overflow-wrap: break-word;
+      }
+
+      .seg-visual {
+        display: none;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-card {
+        padding: 28px 20px;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .comparison-table-wrap {
+        border-radius: var(--r-sm);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .btn-lg {
+        padding: 14px 24px;
+        font-size: .9rem;
+      }
+
+      .hero-ctas {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .segment-tabs {
+        gap: 6px;
+      }
+
+      .seg-tab {
+        font-size: .78rem;
+        padding: 8px 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── NAVBAR ──────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16" cy="16" r="16" fill="#f472b6" />
+            <ellipse cx="10" cy="12" rx="4" ry="5" fill="white" />
+            <ellipse cx="22" cy="12" rx="4" ry="5" fill="white" />
+            <circle cx="10" cy="12" r="2" fill="#1e1b4b" />
+            <circle cx="22" cy="12" r="2" fill="#1e1b4b" />
+            <path d="M8 19c1 4 6 6 8 6s7-2 8-6" stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none" />
+            <circle cx="9" cy="9" r="1.5" fill="#fbbf24" />
+            <circle cx="23" cy="9" r="1.5" fill="#fbbf24" />
+          </svg>
+          Pelúcias Personalizadas
+        </a>
+        <ul class="nav-links">
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#para-quem">Para Quem</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="#orcamento" class="btn btn-primary nav-cta">Pedir Orçamento</a>
+        <div class="hamburger" id="hamburger" role="button" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#como-funciona" class="mobile-link">Como Funciona</a>
+    <a href="#produtos" class="mobile-link">Produtos</a>
+    <a href="#para-quem" class="mobile-link">Para Quem</a>
+    <a href="#faq" class="mobile-link">FAQ</a>
+    <a href="#orcamento" class="btn btn-primary btn-lg">Pedir Orçamento</a>
+  </div>
+
+  <!-- ── HERO ────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg-blob"></div>
+    <div class="hero-bg-dots"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content fade-up">
+          <div class="hero-badge">
+            <span>🏆</span>
+            +1.000 empresas atendidas
+          </div>
+          <h1 class="hero-title">
+            A identidade da sua marca em pelúcia. <span class="accent">A partir de 300 unidades.</span>
+          </h1>
+          <p class="hero-sub">
+            Pelúcias e mascotes personalizados para empresas que levam a identidade visual a sério. Fábrica própria,
+            design gratuito incluso, entrega para todo o Brasil.
+          </p>
+          <div class="hero-ctas">
+            <a href="https://wa.me/5547999327695" target="_blank" class="btn btn-whatsapp btn-lg">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+              </svg>
+              Atendimento via WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="hero-illustration">
+          <div class="hero-mascot-wrap">
+            <div class="hero-mascot-bg">
+              <img src="Ursinho-hero.jpg" alt="Pelúcia personalizada com sua arte"
+                style="width:280px;height:280px;object-fit:cover;border-radius:50%;">
+            </div>
+            <div class="hero-pill pill-1">
+              <div class="dot" style="background:#22c55e"></div>
+              Design gratuito incluso
+            </div>
+            <div class="hero-pill pill-2">
+              <div class="dot" style="background:#f472b6"></div>
+              A partir de 300 unidades
+            </div>
+            <div class="hero-pill pill-3">
+              <div class="dot" style="background:#fbbf24"></div>
+              20–30 dias úteis
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SOCIAL PROOF BAR ─────────────────────────────── -->
+  <section id="proof-bar">
+    <div class="container">
+      <div class="proof-stats">
+        <div class="proof-stat">
+          <span class="proof-stat-number" data-target="1000" data-prefix="+" data-suffix="">+1.000</span>
+          <span class="proof-stat-label">empresas atendidas<br>em todo o Brasil</span>
+        </div>
+        <div class="proof-stat">
+          <span class="proof-stat-number">300 unid.</span>
+          <span class="proof-stat-label">pedido mínimo<br>por modelo</span>
+        </div>
+        <div class="proof-stat">
+          <span class="proof-stat-number">20–30 d.u.</span>
+          <span class="proof-stat-label">prazo padrão<br>de entrega</span>
+        </div>
+      </div>
+      <p class="proof-sub">
+        <strong>Fábrica 100% própria.</strong> Design gratuito incluso em todo pedido.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── HOW IT WORKS ─────────────────────────────────── -->
+  <section id="como-funciona">
+    <div class="container">
+      <div class="how-header">
+        <div class="section-tag">Como funciona</div>
+        <h2 class="section-title">Do briefing ao brinde em 5 passos</h2>
+        <p class="section-sub">Você foca na sua campanha. A gente cuida de tudo.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-item fade-up">
+          <div class="step-num">1</div>
+          <div class="step-icon">💬</div>
+          <div class="step-title">Solicite seu orçamento</div>
+          <div class="step-desc">Fale com nossa equipe pelo WhatsApp ou preencha o formulário. Resposta em até 2 horas
+            úteis.</div>
+        </div>
+        <div class="step-item fade-up">
+          <div class="step-num">2</div>
+          <div class="step-icon">🎨</div>
+          <div class="step-title">Arte ou design gratuito</div>
+          <div class="step-desc">Tem logo ou mascote? Mande o arquivo. Não tem? Nossa equipe cria o design
+            gratuitamente.</div>
+        </div>
+        <div class="step-item fade-up">
+          <div class="step-num">3</div>
+          <div class="step-icon">✅</div>
+          <div class="step-title">Aprove o protótipo</div>
+          <div class="step-desc">Antes de produzir qualquer unidade, você vê e aprova a arte digital. Nada entra em
+            produção sem o seu ok.</div>
+        </div>
+        <div class="step-item fade-up">
+          <div class="step-num">4</div>
+          <div class="step-icon">🏭</div>
+          <div class="step-title">Produção interna</div>
+          <div class="step-desc">Produção na nossa fábrica com inspeção de qualidade pré-embarque em cada pedido.</div>
+        </div>
+        <div class="step-item fade-up">
+          <div class="step-num">5</div>
+          <div class="step-icon">📦</div>
+          <div class="step-title">Receba onde estiver</div>
+          <div class="step-desc">Entrega por aéreo ou rodoviário para todo o Brasil. Você acompanha e recebe no prazo
+            combinado.</div>
+        </div>
+      </div>
+      <div class="how-cta">
+        <a href="#orcamento" class="btn btn-primary btn-lg">Solicitar orçamento agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTS ─────────────────────────────────────── -->
+  <section id="produtos">
+    <div class="container">
+      <div class="products-header">
+        <div class="section-tag">Linha de pelúcias</div>
+        <h2 class="section-title">Uma pelúcia para cada<br>objetivo da sua marca</h2>
+        <p class="section-sub">Seja um brinde para colaboradores, o mascote oficial da empresa ou uma coleção para
+          revenda — temos o formato certo.</p>
+      </div>
+      <div class="products-grid">
+        <!-- Card 1 -->
+        <div class="product-card fade-up">
+          <div class="product-img" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8)">
+            <svg viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="75" r="45" fill="#f472b6" opacity=".3" />
+              <circle cx="100" cy="75" r="32" fill="#f472b6" opacity=".5" />
+              <text x="100" y="90" text-anchor="middle" font-size="36">🐻</text>
+              <rect x="60" y="125" width="80" height="20" rx="10" fill="white" opacity=".7" />
+              <text x="100" y="140" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="10"
+                font-weight="800" fill="#1e1b4b">MASCOTE</text>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div class="product-name">Mascote Corporativo</div>
+            <div class="product-desc">Transformamos o personagem da sua marca em pelúcia 3D artesanal. Exclusivo,
+              reconhecível, memorável.</div>
+            <div class="product-tags">
+              <span class="product-tag">Eventos</span>
+              <span class="product-tag">Campanhas</span>
+              <span class="product-tag">Branding</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="product-card fade-up">
+          <div class="product-img" style="background:linear-gradient(135deg,#fef9c3,#fde68a)">
+            <svg viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="75" r="45" fill="#fbbf24" opacity=".3" />
+              <text x="100" y="90" text-anchor="middle" font-size="36">🐼</text>
+              <rect x="55" y="125" width="90" height="20" rx="10" fill="white" opacity=".7" />
+              <text x="100" y="140" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="9"
+                font-weight="800" fill="#1e1b4b">PERSONALIZADA</text>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div class="product-name">Pelúcia Personalizada</div>
+            <div class="product-desc">Design exclusivo com a identidade visual da sua empresa. Nenhum concorrente vai
+              ter igual.</div>
+            <div class="product-tags">
+              <span class="product-tag">Brindes</span>
+              <span class="product-tag">Lançamentos</span>
+              <span class="product-tag">Fidelização</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="product-card fade-up">
+          <div class="product-img" style="background:linear-gradient(135deg,#ede9fe,#c4b5fd)">
+            <svg viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="75" r="45" fill="#2196F3" opacity=".2" />
+              <text x="100" y="90" text-anchor="middle" font-size="36">🌈</text>
+              <rect x="55" y="125" width="90" height="20" rx="10" fill="white" opacity=".7" />
+              <text x="100" y="140" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="9"
+                font-weight="800" fill="#1e1b4b">SUBLIMAÇÃO</text>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div class="product-name">Sublimação Total</div>
+            <div class="product-desc">Tecido com estampa exclusiva da sua marca em 360°. Acabamento premium para itens
+              colecionáveis.</div>
+            <div class="product-tags">
+              <span class="product-tag">Moda</span>
+              <span class="product-tag">Lifestyle</span>
+              <span class="product-tag">Colecionáveis</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="product-card fade-up">
+          <div class="product-img" style="background:linear-gradient(135deg,#fce7f3,#f9a8d4)">
+            <svg viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="75" r="45" fill="#9C27B0" opacity=".2" />
+              <text x="100" y="90" text-anchor="middle" font-size="36">🛋️</text>
+              <rect x="55" y="125" width="90" height="20" rx="10" fill="white" opacity=".7" />
+              <text x="100" y="140" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="9"
+                font-weight="800" fill="#1e1b4b">ALMOFADA</text>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div class="product-name">Almofada Personalizada</div>
+            <div class="product-desc">Face, personagem ou mascote da sua marca em almofada artesanal. Alta visibilidade
+              em ambientes corporativos e eventos.</div>
+            <div class="product-tags">
+              <span class="product-tag">Decoração</span>
+              <span class="product-tag">Eventos</span>
+              <span class="product-tag">Brindes</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="product-card fade-up">
+          <div class="product-img" style="background:linear-gradient(135deg,#ecfdf5,#6ee7b7)">
+            <svg viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="75" r="45" fill="#4CAF50" opacity=".2" />
+              <text x="100" y="90" text-anchor="middle" font-size="36">🎒</text>
+              <rect x="55" y="125" width="90" height="20" rx="10" fill="white" opacity=".7" />
+              <text x="100" y="140" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="9"
+                font-weight="800" fill="#1e1b4b">ACESSÓRIOS</text>
+            </svg>
+          </div>
+          <div class="product-body">
+            <div class="product-name">Acessórios da Marca</div>
+            <div class="product-desc">Bolsas, bonés, toalhas, lenços, chinelos com identidade da empresa. O kit perfeito
+              para eventos e brindes temáticos.</div>
+            <div class="product-tags">
+              <span class="product-tag">Kits</span>
+              <span class="product-tag">Eventos</span>
+              <span class="product-tag">Trade marketing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DIFFERENTIALS ────────────────────────────────── -->
+  <section id="diferenciais">
+    <div class="container">
+      <div class="diff-header">
+        <div class="section-tag">Diferenciais</div>
+        <h2 class="section-title">O que nos separa de<br>qualquer outro fabricante</h2>
+        <p class="section-sub">Nenhum concorrente combina mínimo baixo, design gratuito e prazo competitivo ao mesmo
+          tempo.</p>
+      </div>
+      <div class="comparison-table-wrap fade-up">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Atributo</th>
+              <th class="us-col">✨ Pelúcias Personalizadas</th>
+              <th>Concorrentes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pedido mínimo</td>
+              <td class="us-val"><span class="badge-yes">✅</span> 300 unidades</td>
+              <td><span class="badge-maybe">⚠️</span> Variável / não divulgado</td>
+            </tr>
+            <tr>
+              <td>Design gratuito incluso</td>
+              <td class="us-val"><span class="badge-yes">✅</span> Incluso</td>
+              <td><span class="badge-no">❌</span> Cobrado à parte</td>
+            </tr>
+            <tr>
+              <td>Fábrica própria</td>
+              <td class="us-val"><span class="badge-yes">✅</span> Controle total</td>
+              <td><span class="badge-maybe">⚠️</span> Nem sempre</td>
+            </tr>
+            <tr>
+              <td>Prazo padrão</td>
+              <td class="us-val"><span class="badge-yes">✅</span> 20–30 dias úteis</td>
+              <td><span class="badge-maybe">⚠️</span> 4–8 semanas ou mais</td>
+            </tr>
+            <tr>
+              <td>Foco 100% B2B</td>
+              <td class="us-val"><span class="badge-yes">✅</span> Exclusivo</td>
+              <td><span class="badge-no">❌</span> Nem sempre</td>
+            </tr>
+            <tr>
+              <td>Pagamento flexível</td>
+              <td class="us-val"><span class="badge-yes">✅</span> 50% + 50% entrega</td>
+              <td><span class="badge-no">❌</span> Não divulgado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="diff-cards">
+        <div class="diff-card fade-up">
+          <span class="diff-card-icon">📏</span>
+          <div class="diff-card-title">300 unidades. Volume real para campanhas que impactam.</div>
+          <div class="diff-card-text">O pedido mínimo de 300 unidades garante viabilidade de produção artesanal com
+            controle total de qualidade em cada lote. Volume suficiente para campanhas internas, lançamentos e brindes
+            de impacto real.</div>
+        </div>
+        <div class="diff-card fade-up">
+          <span class="diff-card-icon">🎨</span>
+          <div class="diff-card-title">Design gratuito não é detalhe. É R$ 500–2.000 a menos no seu orçamento.</div>
+          <div class="diff-card-text">A maioria dos fabricantes cobra pelo desenvolvimento de arte. Aqui, nossa equipe
+            cria o design do zero, gratuitamente. Você só aprova.</div>
+        </div>
+        <div class="diff-card fade-up">
+          <span class="diff-card-icon">🏭</span>
+          <div class="diff-card-title">Fábrica própria significa: você não depende de terceiros.</div>
+          <div class="diff-card-text">Cada pelúcia é produzida internamente com inspeção de qualidade antes de cada
+            entrega. Sem surpresas de lote, sem inconsistência de cor ou material entre pedidos.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOR WHOM ──────────────────────────────────────── -->
+  <section id="para-quem">
+    <div class="container">
+      <div class="forwhom-header fade-up">
+        <div class="section-tag">Para quem é</div>
+        <h2 class="section-title">Para empresas que levam brinde a sério</h2>
+        <p class="section-sub">Cada segmento tem um desafio diferente. Temos o formato certo para cada um.</p>
+      </div>
+      <div class="segment-tabs">
+        <button class="seg-tab active" data-panel="rh">🏢 RH e Benefícios</button>
+        <button class="seg-tab" data-panel="agencias">📣 Agências</button>
+        <button class="seg-tab" data-panel="varejo">🛍️ Varejo</button>
+        <button class="seg-tab" data-panel="industria">🏆 Grandes Marcas</button>
+      </div>
+      <div class="segment-panels">
+        <div class="seg-panel active" id="panel-rh">
+          <div class="seg-panel-inner">
+            <div>
+              <span class="seg-label">RH e Benefícios</span>
+              <h3 class="seg-title">O brinde que colaboradores guardam — não descartam.</h3>
+              <p class="seg-body">Você precisa de um brinde que represente a cultura da empresa, caiba no orçamento de
+                benefício e chegue no prazo da campanha interna. Entendemos.<br><br>Com a Pelúcias Personalizadas,
+                equipes recebem mascotes com a identidade da empresa — sem modelos genéricos, sem custo extra de design,
+                com produção 100% interna e prazo de 20 a 30 dias úteis. O brinde perfeito para kits de onboarding,
+                aniversários e campanhas internas.</p>
+              <div class="seg-quote">"O mascote que seu novo colaborador mostra para a família no primeiro dia."</div>
+              <a href="https://wa.me/5547999327695" target="_blank" class="btn btn-whatsapp">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+                Quero brindes para meu time
+              </a>
+            </div>
+            <div class="seg-visual">
+              <div class="seg-icon-big">🏢</div>
+            </div>
+          </div>
+        </div>
+        <div class="seg-panel" id="panel-agencias">
+          <div class="seg-panel-inner">
+            <div>
+              <span class="seg-label">Agências de Marketing</span>
+              <h3 class="seg-title">Prazo garantido e um fornecedor que fala a língua do seu cliente.</h3>
+              <p class="seg-body">Você conhece bem a dor de um fornecedor que não entregou no prazo — ou que
+                "interpretou" o brand guide da forma errada. Aqui é diferente.<br><br>Nossa equipe lê brief, entende
+                identidade visual e entrega no prazo acordado. Com produção 100% interna, não dependemos de terceiros.
+                Prazo de 20 a 30 dias úteis — ou em prazo especial, sob consulta.</p>
+              <div class="seg-quote">"Quando o cliente pergunta 'quem fez esse mascote?', você tem a resposta certa."
+              </div>
+              <a href="https://wa.me/5547999327695" target="_blank" class="btn btn-whatsapp">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+                Solicitar orçamento para campanha
+              </a>
+            </div>
+            <div class="seg-visual">
+              <div class="seg-icon-big">📣</div>
+            </div>
+          </div>
+        </div>
+        <div class="seg-panel" id="panel-varejo">
+          <div class="seg-panel-inner">
+            <div>
+              <span class="seg-label">Varejo e Private Label</span>
+              <h3 class="seg-title">Uma linha exclusiva que nenhum concorrente vai ter.</h3>
+              <p class="seg-body">Pelúcia importada genérica compete por preço. Pelúcia exclusiva com a identidade da
+                sua loja compete por desejo — e permite margem real de revenda.<br><br>Com pedido mínimo de 300
+                unidades, você lança uma coleção com volume real de vendas. Cria itens sazonais com identidade exclusiva
+                e coloca na prateleira um produto que só existe na sua loja.</p>
+              <div class="seg-quote">"A exclusividade que justifica o preço premium — e fideliza o cliente."</div>
+              <a href="https://wa.me/5547999327695" target="_blank" class="btn btn-whatsapp">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+                Quero criar minha linha exclusiva
+              </a>
+            </div>
+            <div class="seg-visual">
+              <div class="seg-icon-big">🛍️</div>
+            </div>
+          </div>
+        </div>
+        <div class="seg-panel" id="panel-industria">
+          <div class="seg-panel-inner">
+            <div>
+              <span class="seg-label">Indústria e Grandes Marcas</span>
+              <h3 class="seg-title">O mascote que trabalha pela sua identidade por anos.</h3>
+              <p class="seg-body">Mascote de marca não é brinde — é ativo de marketing de longo prazo. E você precisa de
+                um fabricante que entenda isso: que respeite Pantone, entregue consistência entre lotes e escale quando
+                a demanda crescer.<br><br>Já atendemos mais de 1.000 empresas, incluindo marcas dos maiores setores do
+                Brasil. Processo de aprovação estruturado, inspeção pré-embarque e capacidade de atender do primeiro
+                lote de 100 ao décimo lote de 5.000 — no mesmo padrão.</p>
+              <div class="seg-quote">"Do primeiro lote ao vigésimo: mesma cor, mesmo acabamento, mesma qualidade."</div>
+              <a href="https://wa.me/5547999327695" target="_blank" class="btn btn-whatsapp">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                </svg>
+                Falar com nosso time comercial
+              </a>
+            </div>
+            <div class="seg-visual">
+              <div class="seg-icon-big">🏆</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIAL ───────────────────────────────────── -->
+  <section id="depoimento">
+    <div class="container">
+      <div class="fade-up">
+        <div class="testimonial-marks">"</div>
+        <blockquote class="testimonial-text">
+          O time transformou nosso logo num mascote adorável que foi um sucesso nos eventos. Qualidade excepcional e
+          atendimento impecável.
+        </blockquote>
+        <div class="testimonial-author">— Cliente Pelúcias Personalizadas</div>
+        <div class="testimonial-stat">
+          <span>🐻</span>
+          +1.000 empresas de todo o Brasil já personalizaram com a gente.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ──────────────────────────────────────────── -->
+  <section id="faq">
+    <div class="container">
+      <div class="faq-layout">
+        <div class="faq-sidebar fade-up">
+          <div class="section-tag">Dúvidas frequentes</div>
+          <h2 class="section-title">Perguntas que todo comprador faz antes de fechar</h2>
+          <p class="section-sub">Não encontrou o que procurava? Fale com a gente no WhatsApp.</p>
+        </div>
+        <div class="faq-list fade-up">
+          <div class="faq-item">
+            <button class="faq-question">Qual é o pedido mínimo? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">300 unidades por modelo. É o padrão do mercado de fabricação B2B de pelúcias
+                personalizadas, garantindo viabilidade de produção artesanal com controle de qualidade em cada unidade.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Não tenho arte vetorizada. Vocês criam o design? <span
+                class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Sim, e sem custo adicional. Nossa equipe de design cria o projeto
+                gratuitamente a partir do seu logo, briefing ou imagem de referência. Você acompanha, aprova e só então
+                a gente produz.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Qual é o prazo de entrega? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">O prazo padrão é de 20 a 30 dias úteis após a aprovação da arte. Para
+                projetos com cronograma apertado, temos opção de prazo especial — fale com nossa equipe para verificar
+                disponibilidade.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Como funciona o pagamento? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Aceitamos PIX, transferência bancária e boleto. A condição padrão é 50% na
+                entrada e 50% na entrega. Para clientes com histórico de pedidos recorrentes, temos condições
+                diferenciadas.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Como sei que a qualidade vai ficar como esperado? <span
+                class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Antes de produzir, você aprova a arte digital. Toda produção passa por
+                inspeção de qualidade pré-embarque — nada sai da fábrica sem checagem. E a produção é 100% interna:
+                controlamos cada etapa sem depender de terceiros.</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Vocês entregam para todo o Brasil? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Sim. Trabalhamos com transporte aéreo e rodoviário para todo o território
+                nacional, com múltiplas transportadoras. O frete é calculado por pedido (modalidade FOB).</div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">E se eu precisar de mais unidades depois do primeiro pedido? <span
+                class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Nossa produção é escalável — do primeiro lote de 300 à campanha de milhares
+                de unidades. Clientes com pedidos recorrentes têm acesso a condições diferenciadas e prazo prioritário.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Vocês fazem mascotes complexos, com múltiplos componentes? <span
+                class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">Sim. Nossa linha Enterprise atende projetos de mascote 3D complexo, com
+                múltiplos componentes, acessórios e consistência garantida entre lotes. Para esses projetos, realizamos
+                reunião de briefing com nossa equipe criativa.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── LEAD FORM ─────────────────────────────────────── -->
+  <section id="orcamento">
+    <div class="container">
+      <div class="form-layout">
+        <div class="form-sidebar fade-up">
+          <div class="section-tag">Solicitar orçamento</div>
+          <h2 class="section-title">Pronto para dar forma à identidade da sua marca?</h2>
+          <p class="section-sub">Solicite seu orçamento agora. Nossa equipe responde em até 2 horas úteis — sem
+            compromisso.</p>
+          <div class="form-features">
+            <div class="form-feature">
+              <div class="form-feature-icon">🎨</div>
+              <div class="form-feature-text">
+                <strong>Design gratuito incluso</strong>
+                <span>Nossa equipe cria ou adapta sua arte sem custo extra</span>
+              </div>
+            </div>
+            <div class="form-feature">
+              <div class="form-feature-icon">📏</div>
+              <div class="form-feature-text">
+                <strong>A partir de 300 unidades</strong>
+                <span>Volume suficiente para campanha com qualidade artesanal</span>
+              </div>
+            </div>
+            <div class="form-feature">
+              <div class="form-feature-icon">⚡</div>
+              <div class="form-feature-text">
+                <strong>Resposta em até 2 horas</strong>
+                <span>Orçamento personalizado para o seu projeto</span>
+              </div>
+            </div>
+            <div class="form-feature">
+              <div class="form-feature-icon">🏭</div>
+              <div class="form-feature-text">
+                <strong>Fábrica própria</strong>
+                <span>Controle total de qualidade, do início à entrega</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-card fade-up">
+          <div class="form-title">Solicite seu orçamento gratuito</div>
+          <form id="lead-form" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="nome">Nome <span class="req">*</span></label>
+                <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo" required>
+              </div>
+              <div class="form-group">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Nome da empresa">
+              </div>
+              <div class="form-group">
+                <label for="whatsapp">WhatsApp <span class="req">*</span></label>
+                <input type="tel" id="whatsapp" name="whatsapp" class="form-input" placeholder="(11) 99999-9999"
+                  required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail <span class="req">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+              </div>
+              <div class="form-group full">
+                <label for="segmento">Segmento <span class="req">*</span></label>
+                <select id="segmento" name="segmento" class="form-input" required>
+                  <option value="" disabled selected>Selecione seu segmento</option>
+                  <option>RH / Benefícios</option>
+                  <option>Agência de Marketing</option>
+                  <option>Varejo / Private Label</option>
+                  <option>Indústria / Grande Marca</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="quantidade">Quantidade estimada</label>
+                <select id="quantidade" name="quantidade" class="form-input">
+                  <option value="" disabled selected>Quantas unidades você precisa?</option>
+                  <option>300–499 unidades</option>
+                  <option>500–999 unidades</option>
+                  <option>1.000+ unidades</option>
+                  <option>Ainda não sei</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="mensagem">Descrição do projeto (opcional)</label>
+                <textarea id="mensagem" name="mensagem" class="form-input"
+                  placeholder="Conte um pouco sobre o projeto: tipo de pelúcia, uso, referências..."></textarea>
+              </div>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary btn-lg">Solicitar meu orçamento gratuito</button>
+            </div>
+          </form>
+          <div class="form-success" id="form-success">
+            <div class="form-success-icon">🎉</div>
+            <h3>Orçamento solicitado com sucesso.</h3>
+            <p>Nossa equipe vai entrar em contato em até 2 horas úteis. Fique de olho no seu WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────── -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:28px;height:28px">
+              <circle cx="16" cy="16" r="16" fill="#f472b6" />
+              <ellipse cx="10" cy="12" rx="4" ry="5" fill="white" />
+              <ellipse cx="22" cy="12" rx="4" ry="5" fill="white" />
+              <circle cx="10" cy="12" r="2" fill="#1e1b4b" />
+              <circle cx="22" cy="12" r="2" fill="#1e1b4b" />
+              <path d="M8 19c1 4 6 6 8 6s7-2 8-6" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                fill="none" />
+            </svg>
+            Pelúcias Personalizadas
+          </a>
+          <p class="footer-tagline">Fábrica própria. Design gratuito.<br>A identidade da sua marca em pelúcia.</p>
+        </div>
+        <div>
+          <div class="footer-col-title">Navegação</div>
+          <ul class="footer-links">
+            <li><a href="#como-funciona">Como Funciona</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#para-quem">Para Quem É</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Para sua empresa</div>
+          <ul class="footer-links">
+            <li><a href="#para-quem">Para RH e Benefícios</a></li>
+            <li><a href="#para-quem">Para Agências</a></li>
+            <li><a href="#para-quem">Para Varejo</a></li>
+            <li><a href="#para-quem">Para Grandes Marcas</a></li>
+            <li><a href="#orcamento">Solicitar Orçamento</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Pelúcias Personalizadas. Todos os direitos reservados.</span>
+        <span>Feito com 🧸 para empresas que levam brinde a sério.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── FLOATING WHATSAPP ─────────────────────────────── -->
+  <a href="https://wa.me/5547999327695" target="_blank" class="wa-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+    </svg>
+  </a>
+
+  <script>
+    // ── NAVBAR SCROLL ──────────────────────────────────────
+    const navbar = document.getElementById('navbar');
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+      navbar.classList.toggle('scrolled', currentScrollY > 40);
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        navbar.classList.add('nav-hidden');
+      } else {
+        navbar.classList.remove('nav-hidden');
+      }
+      lastScrollY = currentScrollY;
+    }, { passive: true });
+
+    // ── MOBILE MENU ────────────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mobileMenu.classList.add('open');
+    });
+    document.addEventListener('click', (e) => {
+      if (mobileMenu.classList.contains('open') && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.remove('open');
+      }
+    });
+    document.querySelectorAll('.mobile-link, .mobile-menu .btn').forEach(el => {
+      el.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    // ── INTERSECTION OBSERVER (fade-up + counter) ──────────
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
+
+    // ── FAQ ACCORDION ──────────────────────────────────────
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const answer = item.querySelector('.faq-answer');
+        const isOpen = item.classList.contains('open');
+
+        // close all
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-answer').style.maxHeight = null;
+        });
+
+        // open clicked (if was closed)
+        if (!isOpen) {
+          item.classList.add('open');
+          answer.style.maxHeight = answer.scrollHeight + 'px';
+        }
+      });
+    });
+
+    // ── SEGMENT TABS ───────────────────────────────────────
+    document.querySelectorAll('.seg-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const panel = tab.dataset.panel;
+
+        document.querySelectorAll('.seg-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.seg-panel').forEach(p => p.classList.remove('active'));
+
+        tab.classList.add('active');
+        document.getElementById('panel-' + panel).classList.add('active');
+      });
+    });
+
+    // ── SMOOTH SCROLL ──────────────────────────────────────
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          const offset = 80;
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ── FORM SUBMIT ────────────────────────────────────────
+    document.getElementById('lead-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const required = this.querySelectorAll('[required]');
+      let valid = true;
+
+      required.forEach(field => {
+        field.style.borderColor = '';
+        if (!field.value.trim()) {
+          field.style.borderColor = '#f472b6';
+          field.focus();
+          valid = false;
+        }
+      });
+
+      if (!valid) return;
+
+      // Show success
+      this.style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+
+      // Scroll into view
+      document.getElementById('form-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+
+    // Clear error border on input
+    document.querySelectorAll('.form-input').forEach(input => {
+      input.addEventListener('input', () => {
+        input.style.borderColor = '';
+      });
+    });
+
+    // ── WHATSAPP MASK ──────────────────────────────────────
+    document.getElementById('whatsapp').addEventListener('input', function () {
+      let v = this.value.replace(/\D/g, '').slice(0, 11);
+      if (v.length >= 7) {
+        v = v.replace(/^(\d{2})(\d{5})(\d{0,4})/, '($1) $2-$3');
+      } else if (v.length >= 3) {
+        v = v.replace(/^(\d{2})(\d{0,5})/, '($1) $2');
+      }
+      this.value = v;
+    });
+  </script>
+</body>
+
+</html>
