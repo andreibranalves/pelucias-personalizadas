@@ -49,13 +49,38 @@ export function OrderForm() {
     setStep((s) => Math.min(s + 1, 2));
   };
 
-  const submit = () => {
+  const [sending, setSending] = useState(false);
+
+  const submit = async () => {
     if (!form.name || !form.email) {
       setError("Preencha nome e e-mail para enviarmos o orçamento.");
       return;
     }
     setError(null);
-    setSent(true);
+    setSending(true);
+    try {
+      // Mesmo endpoint Formspree usado pelo site anterior (backup/html-original).
+      const body = new FormData();
+      body.append("nome", form.name);
+      body.append("empresa", form.company);
+      body.append("email", form.email);
+      body.append("telefone", form.phone);
+      body.append("quantidade", form.quantity);
+      body.append("prazo", form.deadline);
+      body.append("briefing", form.briefing);
+      if (file) body.append("anexo", file, file.name);
+      const res = await fetch("https://formspree.io/f/mqeygoja", {
+        method: "POST",
+        body,
+        headers: { Accept: "application/json" },
+      });
+      if (!res.ok) throw new Error(`Formspree ${res.status}`);
+      setSent(true);
+    } catch {
+      setError("Erro ao enviar. Tente novamente ou chame no WhatsApp.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -240,9 +265,10 @@ export function OrderForm() {
                     <button
                       type="button"
                       onClick={step === 2 ? submit : next}
-                      className="bg-background px-6 py-3 font-mono text-[10px] uppercase tracking-[0.2em] text-foreground transition-opacity hover:opacity-85"
+                      disabled={sending}
+                      className="bg-background px-6 py-3 font-mono text-[10px] uppercase tracking-[0.2em] text-foreground transition-opacity hover:opacity-85 disabled:opacity-50"
                     >
-                      {step === 2 ? "Enviar pedido" : "Continuar"}
+                      {step === 2 ? (sending ? "Enviando..." : "Enviar pedido") : "Continuar"}
                     </button>
                   </div>
                 </div>
