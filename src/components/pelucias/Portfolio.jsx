@@ -5,54 +5,48 @@ const items = [
   {
     img: "/img/portfolio-1.jpg",
     title: "Mascote Corporativo",
-    tags: ["Eventos", "Campanhas", "Branding"],
-    spec: "Velboa Premium · Bordado · Recheio Sustentável",
     span: "lg:col-span-2 lg:row-span-2",
   },
   {
     img: "/img/portfolio-2.jpg",
-    title: "Sketch → Plush",
-    tags: ["Processo", "Atelier"],
-    spec: "Protótipo · Aprovação digital · Produção interna",
+    title: "Do Esboço à Pelúcia",
     span: "",
   },
   {
     img: "/img/portfolio-3.jpg",
     title: "Sublimação Total",
-    tags: ["Moda", "Lifestyle", "Colecionáveis"],
-    spec: "Estampa 360° · Acabamento premium",
     span: "",
   },
   {
     img: "/img/portfolio-4.jpg",
     title: "Almofada Personalizada",
-    tags: ["Decoração", "Eventos", "Brindes"],
-    spec: "Bordado facial · Alta visibilidade corporativa",
     span: "lg:col-span-2",
+  },
+  {
+    img: "/img/portfolio-5.jpg",
+    title: "Almofada Premium",
+    span: "",
   },
 ];
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="bg-[#FDFDFD] py-24 lg:py-32">
+    <section id="portfolio" className="bg-cream py-24 lg:py-32">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
         <header className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
           <div>
-            <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#2D5BFF] mb-4">
-              [ 02 · Portfolio de Escala ]
-            </div>
-            <h2 className="font-heading font-bold text-[#1A1A1A] text-[clamp(2rem,4vw,3.5rem)] leading-[0.95] tracking-[-0.02em] max-w-xl">
+            <h2 className="font-heading font-semibold text-[#1A1A1A] text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] tracking-[-0.01em] max-w-xl">
               Qualquer mascote.<br />
-              <span className="text-[#1A1A1A]/40">Não é promessa — é catálogo.</span>
+              <span className="text-[#1A1A1A]/60 font-medium">Não é promessa, é catálogo.</span>
             </h2>
           </div>
-          <p className="text-[#1A1A1A]/60 text-lg leading-[1.6] max-w-sm">
+          <p className="text-[#1A1A1A]/70 text-lg leading-[1.6] max-w-sm">
             Do brinde de colaborador ao mascote oficial da marca. Cada projeto é
             desenvolvido do zero, com materiais premium e inspeção pré-embarque.
           </p>
         </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 auto-rows-[280px] lg:auto-rows-[320px] gap-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3 auto-rows-[280px] lg:auto-rows-[320px] gap-4">
           {items.map((it) => (
             <Card key={it.title} item={it} />
           ))}
@@ -68,7 +62,7 @@ function Card({ item }) {
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`relative overflow-hidden bg-[#F2F2F2] group cursor-pointer ${item.span}`}
+      className={`relative overflow-hidden bg-beige rounded-[1.5rem] group cursor-pointer ${item.span}`}
     >
       <Image
         src={item.img}
@@ -80,22 +74,8 @@ function Card({ item }) {
       />
       <div className={`absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0 transition-opacity duration-300 ${hover ? "opacity-100" : "opacity-60"}`} />
 
-      <div className="absolute top-4 left-4 flex flex-wrap gap-1.5">
-        {item.tags.map((t) => (
-          <span key={t} className="font-mono text-[9px] uppercase tracking-[0.14em] text-white/90 bg-black/30 backdrop-blur-sm px-2 py-1 rounded-sm border border-white/15">
-            {t}
-          </span>
-        ))}
-      </div>
-
-      <div className={`absolute bottom-0 inset-x-0 p-5 transition-all duration-500 ${hover ? "translate-y-0" : "translate-y-2"}`}>
-        <h3 className="font-heading font-semibold text-white text-xl">{item.title}</h3>
-        <div className={`overflow-hidden transition-all duration-500 ${hover ? "max-h-20 opacity-100 mt-2" : "max-h-0 opacity-0"}`}>
-          <div className="flex items-start gap-2 pt-2 border-t border-white/20">
-            <span className="font-mono text-[9px] uppercase tracking-[0.14em] text-[#2D5BFF] mt-0.5">Spec</span>
-            <span className="font-mono text-[10px] text-white/80 leading-relaxed">{item.spec}</span>
-          </div>
-        </div>
+      <div className="absolute bottom-0 inset-x-0 p-5">
+        <h3 className="font-heading font-medium text-white text-xl">{item.title}</h3>
       </div>
     </div>
   );

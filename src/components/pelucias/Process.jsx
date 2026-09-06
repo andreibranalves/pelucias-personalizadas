@@ -30,22 +30,22 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="processo" className="bg-[#F2F2F2] py-24 lg:py-32 relative">
+    <section id="processo" className="bg-beige py-24 lg:py-32">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-10">
-        <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-[#2D5BFF] mb-4">
-          [ 03 · Processo ]
-        </div>
-        <h2 className="font-heading font-bold text-[#1A1A1A] text-[clamp(2rem,4vw,3.5rem)] leading-[0.95] tracking-[-0.02em] max-w-2xl mb-16">
+        <h2 className="font-heading font-semibold text-[#1A1A1A] text-[clamp(2rem,4vw,3.5rem)] leading-[1.05] tracking-[-0.01em] max-w-2xl mb-16">
           Do briefing ao brinde<br />
-          <span className="text-[#1A1A1A]/40">em 5 passos.</span>
+          <span className="text-[#1A1A1A]/60 font-medium">em 5 passos.</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-px bg-[#1A1A1A]/10 border border-[#1A1A1A]/10">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {steps.map((s) => (
-            <div key={s.n} className="bg-[#F2F2F2] p-6 lg:p-7 flex flex-col min-h-[260px] hover:bg-[#FDFDFD] transition-colors duration-300">
-              <span className="font-mono text-[11px] text-[#2D5BFF] mb-6">{s.n}</span>
+            <div
+              key={s.n}
+              className="bg-cream rounded-[1.25rem] border border-black/5 p-6 lg:p-7 flex flex-col min-h-[260px] transition-all duration-300"
+            >
+              <span className="font-heading font-semibold text-lg text-wine mb-6">{s.n}</span>
               <h3 className="font-heading font-semibold text-[#1A1A1A] text-lg leading-tight mb-3">{s.title}</h3>
-              <p className="text-[#1A1A1A]/60 text-sm leading-[1.6] mt-auto">{s.desc}</p>
+              <p className="text-[#1A1A1A]/70 text-sm leading-[1.6] mt-auto">{s.desc}</p>
             </div>
           ))}
         </div>
